@@ -4,19 +4,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <body><!-- Your existing content -->
-        <div id="chatbot-container">
-          <h1>Ask our AI</h1>
-          <div id="chat-window">
-            <div id="messages"></div>
-            <input type="text" id="user-input" placeholder="Type your message here...">
-            <button id="send-btn">Send</button>
-            <link rel="stylesheet" href="chatbot.css">
-          </div>
-        </div>
-      </main>
-      <script src="firebase-setup.js"></script>
-      <script src=""chatbot.js></script>
-    </body>
+       <script id="messenger-widget-b" src="https://cdn.botpenguin.com/website-bot.js" defer></script>
+<script>
+  var botKey = '6728e5c7078ae224ac7ca165,6728e533ff4fdb2204982407';
+  window.addEventListener('load', function() {
+    window.botPenguin.init({
+      key: botKey
+    });
+  });
+</script>
+
     </html>
     
 
