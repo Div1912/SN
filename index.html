@@ -1,20 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <body><!-- Your existing content -->
-       <script id="messenger-widget-b" src="https://cdn.botpenguin.com/website-bot.js" defer></script>
-<script>
-  var botKey = '6728e5c7078ae224ac7ca165,6728e533ff4fdb2204982407';
-  window.addEventListener('load', function() {
-    window.botPenguin.init({
-      key: botKey
+   
+  <!-- IBM Watson Assistant Embed Code -->
+  <script>
+    window.watsonAssistantChatOptions = {
+        integrationID: "1cd1af54-57d8-4fbc-9ee8-449f6d8e9524", // Assistant ID
+        region: "us-east", // Region based on URL
+        serviceInstanceID: "0acfa692-73e3-4661-8b8e-", // Service instance URL
+        onLoad: function(instance) { instance.render(); }
+      };
+    setTimeout(function(){
+      const t=document.createElement('script');
+      t.src="https://web-chat.global.assistant.watson.appdomain.cloud/loadWatsonAssistantChat.js";
+      document.head.appendChild(t);
     });
-  });
-</script>
+  </script>
+</body>
+</html>
 
-    </html>
     
 
         <div id="image-background">
